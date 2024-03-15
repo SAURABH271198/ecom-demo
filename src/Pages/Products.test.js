@@ -7,10 +7,7 @@ import { MOCK_DATA } from "../../constants";
 
 jest.mock("react-router-dom", () => ({
 	...jest.requireActual("react-router-dom"),
-	...jest.requireActual("react-redux"),
 	useNavigate: jest.fn(),
-	useSelector: jest.fn(),
-	useDispatch: jest.fn(),
 }));
 
 describe("test cases for products component", () => {

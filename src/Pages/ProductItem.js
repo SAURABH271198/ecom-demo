@@ -27,6 +27,7 @@ const ProductItem = ({ product }) => {
 					navigate(`/product/${id}`);
 				});
 			}}
+			data-testid="product-card"
 		>
 			<CardMedia
 				sx={{ height: 140 }}
